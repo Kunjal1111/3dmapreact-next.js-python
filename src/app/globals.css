@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --ink: #17231e;
+  --muted: #7b8580;
+  --paper: #f8f8f4;
+  --line: #e5e8e1;
+  --leaf: #2d6b51;
+  --coral: #ef775e;
+  --sun: #f4c95d;
+}
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; margin: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-dm-sans), sans-serif; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #f4c95d88; }
+
+.mapboxgl-ctrl-attrib { font-size: 9px !important; }
+.mapboxgl-ctrl-group { border-radius: 10px !important; box-shadow: 0 3px 14px #15251c16 !important; }
+.mapboxgl-ctrl-group button { width: 34px !important; height: 34px !important; }
+.mapboxgl-canvas { outline: none; }
+.campus-marker { width: 24px; height: 24px; padding: 0; border: 2px solid #fff; border-radius: 50% 50% 50% 2px; background: var(--coral); box-shadow: 0 2px 8px #17231e55; transform: rotate(-45deg); }
+.campus-marker span { display: block; width: 6px; height: 6px; margin: auto; border-radius: 50%; background: #fff; }
+.campus-marker-active { width: 30px; height: 30px; background: var(--leaf); }
+.campus-area-marker { display: block; width: 20px; height: 20px; border: 3px solid #fff; border-radius: 50%; background: var(--sun); box-shadow: 0 0 0 7px #f4c95d55, 0 2px 8px #17231e66; }
+.route-progress-dot { display: block; width: 12px; height: 12px; border: 2px solid #fff; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 0 #ef775e70, 0 1px 6px #17231e66; animation: route-beacon 1.2s ease-out infinite; pointer-events: none; }
+
+@keyframes route-dash { to { stroke-dashoffset: -36; } }
+.route-line { animation: route-dash 1.3s linear infinite; }
+@keyframes route-beacon { 70% { box-shadow: 0 0 0 9px #ef775e00, 0 1px 6px #17231e66; } 100% { box-shadow: 0 0 0 0 #ef775e00, 0 1px 6px #17231e66; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

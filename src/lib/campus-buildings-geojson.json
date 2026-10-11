@@ -1,0 +1,271 @@
+{
+  "type": "FeatureCollection",
+  "name": "ppsu_campus_buildings_3d",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-admin-gate",
+        "name": "P. P. Savani University",
+        "category": "academic",
+        "height": 18,
+        "base_height": 0,
+        "color": "#1e4d35",
+        "description": "Main University Welcome Entrance, Reception & Administrative Operations Gate."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.007060, 21.497120],
+          [73.007420, 21.497120],
+          [73.007420, 21.497340],
+          [73.007060, 21.497340],
+          [73.007060, 21.497120]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-central-plaza",
+        "name": "PPSU Campus Central Plaza",
+        "category": "outdoors",
+        "height": 4,
+        "base_height": 0,
+        "color": "#768c71",
+        "description": "Central academic landscaped pavilion, pedestrian quadrangle and campus landmark."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.007680, 21.498830],
+          [73.007920, 21.498830],
+          [73.007920, 21.499020],
+          [73.007680, 21.499020],
+          [73.007680, 21.498830]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-library",
+        "name": "Library",
+        "category": "academic",
+        "height": 22,
+        "base_height": 0,
+        "color": "#23533c",
+        "description": "Central University Library, Digital Knowledge Resource Center and Reading Lounges."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.007480, 21.498850],
+          [73.007660, 21.498850],
+          [73.007660, 21.499060],
+          [73.007480, 21.499060],
+          [73.007480, 21.498850]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-hostel",
+        "name": "Hostel",
+        "category": "hostel",
+        "height": 30,
+        "base_height": 0,
+        "color": "#4a6785",
+        "description": "PPSU Student Residential Halls, Multi-storey Hostel Towers and Common Lounges."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.008760, 21.499000],
+          [73.009140, 21.499000],
+          [73.009140, 21.499300],
+          [73.008760, 21.499300],
+          [73.008760, 21.499000]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-indoor-gym",
+        "name": "Indoor Gymnasium",
+        "category": "sports",
+        "height": 14,
+        "base_height": 0,
+        "color": "#9e5c38",
+        "description": "State-of-the-Art Indoor Gymnasium, Fitness Studio and Cardio-training Arena."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.009550, 21.499150],
+          [73.009870, 21.499150],
+          [73.009870, 21.499350],
+          [73.009550, 21.499350],
+          [73.009550, 21.499150]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-canteen",
+        "name": "Canteen / Cafeteria",
+        "category": "food",
+        "height": 12,
+        "base_height": 0,
+        "color": "#d97736",
+        "description": "Main University Food Court, Multi-cuisine Cafeteria and Open Dining Terraces."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.008450, 21.498420],
+          [73.008780, 21.498420],
+          [73.008780, 21.498620],
+          [73.008450, 21.498620],
+          [73.008450, 21.498420]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-medical",
+        "name": "Hospital and Medical Facility",
+        "category": "services",
+        "height": 16,
+        "base_height": 0,
+        "color": "#3b7a8a",
+        "description": "PPSU Healthcare Center, 24/7 Medical Clinic, Emergency Response & Pharmacy."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.006760, 21.497640],
+          [73.007080, 21.497640],
+          [73.007080, 21.497860],
+          [73.006760, 21.497860],
+          [73.006760, 21.497640]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-cricket-ground",
+        "name": "Kapildev Cricket Ground",
+        "category": "sports",
+        "height": 5,
+        "base_height": 0,
+        "color": "#3f7a4d",
+        "description": "PPSU Full-size Kapildev Cricket Stadium, Pavilion Seating and Practice Nets."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.005380, 21.498680],
+          [73.006020, 21.498680],
+          [73.006020, 21.499120],
+          [73.005380, 21.499120],
+          [73.005380, 21.498680]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-sports-arena",
+        "name": "Major Dhyanchand Sports Arena",
+        "category": "sports",
+        "height": 15,
+        "base_height": 0,
+        "color": "#b85c38",
+        "description": "Major Dhyanchand Sports Complex, Badminton Courts, Table Tennis & Indoor Games."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.006650, 21.498860],
+          [73.006980, 21.498860],
+          [73.006980, 21.499100],
+          [73.006650, 21.499100],
+          [73.006650, 21.498860]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-multipurpose-ground",
+        "name": "Sunil Chhetri Multi Purpose Ground",
+        "category": "sports",
+        "height": 5,
+        "base_height": 0,
+        "color": "#4e825a",
+        "description": "Sunil Chhetri Athletic Track, Football Ground and Outdoor Sports Arena."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.005920, 21.498920],
+          [73.006380, 21.498920],
+          [73.006380, 21.499200],
+          [73.005920, 21.499200],
+          [73.005920, 21.498920]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-auditorium",
+        "name": "P P Savani Auditorium Hall",
+        "category": "academic",
+        "height": 20,
+        "base_height": 0,
+        "color": "#2c5e47",
+        "description": "Grand University Auditorium Hall, Convocation Center and Cultural Event Theater."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.006750, 21.498680],
+          [73.007080, 21.498680],
+          [73.007080, 21.498920],
+          [73.006750, 21.498920],
+          [73.006750, 21.498680]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bldg-academic-schools",
+        "name": "PPSU Academic Schools",
+        "category": "academic",
+        "height": 26,
+        "base_height": 0,
+        "color": "#1b4430",
+        "description": "Engineering, Sciences, Management, Nursing & Architecture Academic Blocks."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [73.008250, 21.498880],
+          [73.008650, 21.498880],
+          [73.008650, 21.499120],
+          [73.008250, 21.499120],
+          [73.008250, 21.498880]
+        ]]
+      }
+    }
+  ]
+}

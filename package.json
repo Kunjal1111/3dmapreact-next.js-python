@@ -1,0 +1,43 @@
+{
+  "name": "ppsu-campus-3d",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=20.9.0" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src next.config.ts tailwind.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/lib/routing.test.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "framer-motion": "^12.23.12",
+    "jose": "^6.1.0",
+    "lucide-react": "^0.468.0",
+    "mapbox-gl": "^3.15.0",
+    "mysql2": "^3.14.4",
+    "next": "^15.5.9",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/mapbox-gl": "^3.4.1",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.9",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.18",
+    "typescript": "^5.9.2",
+    "tsx": "^4.20.6"
+  },
+  "overrides": {
+    "postcss": "^8.5.28"
+  }
+}
