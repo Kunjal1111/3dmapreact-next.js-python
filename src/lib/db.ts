@@ -7,19 +7,26 @@ export function getPool(): Pool {
   const url = process.env.DATABASE_URL;
   if (!url) throw new Error("DATABASE_NOT_CONFIGURED");
   const databaseUrl = new URL(url);
+  const sslMode = databaseUrl.searchParams.get("sslmode") || databaseUrl.searchParams.get("ssl");
+  const useSsl = sslMode === "false" || sslMode === "disable"
+    ? undefined
+    : (sslMode || process.env.NODE_ENV === "production")
+      ? { rejectUnauthorized: sslMode === "require" ? false : false }
+      : undefined;
+
   pool = mysql.createPool({
     host: databaseUrl.hostname,
     port: Number(databaseUrl.port || 3306),
     user: decodeURIComponent(databaseUrl.username),
     password: decodeURIComponent(databaseUrl.password),
-    database: decodeURIComponent(databaseUrl.pathname.replace(/^\//, "")),
+    database: decodeURIComponent(databaseUrl.pathname.replace(/^\//, "").split("?")[0]),
     connectionLimit: 8,
     maxIdle: 4,
     idleTimeout: 60_000,
     enableKeepAlive: true,
     charset: "utf8mb4",
     timezone: "Z",
-    ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: true } : undefined,
+    ssl: useSsl,
   });
   return pool;
 }
