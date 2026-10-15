@@ -86,30 +86,8 @@ export async function POST(request: NextRequest) {
       }, { status: 422 });
     }
 
-    let route = null;
-
-    // Try Python NetworkX microservice first if available
-    try {
-      const pythonRes = await fetch("http://127.0.0.1:8000/api/python/routes/calculate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fromId: parsed.data.fromId, toId: parsed.data.toId }),
-        signal: AbortSignal.timeout(1500),
-      });
-      if (pythonRes.ok) {
-        const pythonData = await pythonRes.json();
-        if (pythonData?.coordinates?.length) {
-          route = pythonData;
-        }
-      }
-    } catch {
-      // Python service offline or timed out; continue to Next.js graph engine fallback
-    }
-
-    // Next.js TypeScript graph engine fallback
-    if (!route) {
-      route = findShortestWalkingRoute(nodes, edges, fromNodeId, toNodeId);
-    }
+    // TypeScript Dijkstra routing engine (replaces the former Python NetworkX microservice)
+    const route = findShortestWalkingRoute(nodes, edges, fromNodeId, toNodeId);
 
     if (!route) {
       return NextResponse.json({
