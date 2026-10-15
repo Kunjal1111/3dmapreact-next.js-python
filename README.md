@@ -106,4 +106,5 @@ database/seed-campus-locations.sql  Source-backed facility names; no coordinates
 ## Accessibility and operations
 
 The explorer uses labeled controls, keyboard-operable buttons, visible focus styles, status announcements, reduced-motion preferences, Mapbox attribution, and responsive layouts. Error, empty, loading, and token/database configuration states are included. Keep the verified campus dataset reviewed as facilities, paths, and access rules change.#   3 d m a p r e a c t - n e x t . j s - p y t h o n  
+ #   3 d m a p r e a c t - n e x t . j s - p y t h o n  
  
